@@ -1,6 +1,11 @@
 
 name: Production Deployment
-on: 
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  branch: main
   workflow_dispatch:
     inputs:
       git-ref:
