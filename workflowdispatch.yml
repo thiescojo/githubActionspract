@@ -4,8 +4,8 @@ on:
     input:
       version:
         description: Bump Version
-          default: v1.0.0
-            required:
+        default: v1.0.0
+        required:
 jobs:
   bump-version:
     name: bump-package version
