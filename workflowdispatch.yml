@@ -1,0 +1,11 @@
+name: first manual workflow
+on: [workflow_dispatch]
+jobs:
+  example:
+    name: example job
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout the repo
+      uses: actions/checkout@v2
+    - name: run a command
+      run: echo "Hi there!"
